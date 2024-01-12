@@ -265,7 +265,7 @@ header{
 }
 /* start home section  */
 .home{
-  background-image: url(/images/bg1-1.jpg);
+  background-image: url(images/bg1-1.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -413,7 +413,7 @@ header{
 }
 /* start panner  */
 .panner{
-    background-image: url(/images/banners2.jpg);
+    background-image: url(images/banners2.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -570,6 +570,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 
     input{
       border: none;
@@ -586,7 +587,7 @@ header{
 }
 /* start footer */
 footer{
-  background-image: url(/images/footer-widgets-bg.jpg);
+  background-image: url(images/footer-widgets-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
