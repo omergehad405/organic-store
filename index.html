@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- font awsome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+    <!-- start header  -->
+    <header>
+        <div class="container">
+        
+        <h3>Last sale up to <span>20% OFF.</span> Use code <span>“SALE70”</span>.</h3>
+        <div class="options">
+            <ul>
+                <li><a href="compare.htlm">compare</a></li>
+                <li><a href="wishlist.htlm">wishlist</a></li>
+                <li><a href="login.htlm">login</a></li>
+                <li onmouseenter="openCart()">
+                    <a href="cart.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        cart
+                        <span class="cart_number">0</span>
+                    </a>
+
+                    <div class="cart-info">
+                        <h2>my cart</h2>
+                        <a class="closeBtn">
+                            <i class="fa-solid fa-xmark" onclick="closeCart()"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </header>
+    <!-- start subheader  -->
+    <div class="sub-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="/images/logo.webp" alt="">
+            </a>
+
+            <ul class="main-nav">
+                <li><a href="index.html" class="active">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="team.html">team</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li>
+                    <a href="shop.html">shop</a>
+                    <span><i class="fa-solid fa-caret-up arrow"></i></span>
+                </li>
+                <li><a href="contacts.html">contacts</a></li>
+
+                <ul class="menu" >
+                    <a class="closeBtn" >
+                        <i class="fa-solid fa-xmark" ></i>
+                    </a>
+    
+                    <li><a href="baking.html">baking</a></li>
+                    <li><a href="fruit.html">fruit</a></li>
+                    <li><a href="organic.html">organic</a></li>
+                    <li><a href="packagedMeals.html">packaged meals</a></li>
+                    <li><a href="vegetable.html">vegetable</a></li>
+                </ul>
+                
+                <i class="fa-solid fa-xmark close"></i>
+            </ul>
+
+            <i class="fa-solid fa-bars bars"></i>
+            
+        </div>
+    </div>
+    <!-- start home  section-->
+    <section class="home">
+        <div class="container">
+            <div class="info">
+                <h1>green leaves <br>up to<span> 20% off</span></h1>
+                <p>Always Fresh, Crispy and Full of Vitamins</p>
+                <button class="btn">add to cart</button>
+            </div>
+        </div>
+    </section>
+    <!-- start about_us section -->
+    <section class="about-us">
+        <h1 class="title">Welcome to our healthy farm!</h1>
+        <div class="container">
+            <div class="info">
+                <div class="box">
+                    <h1>1.</h1>
+                    <span>Best Quality Products</span>
+                    <p>We stand for providing the most fresh organic <br>
+                        products which will serve your health and be a <br>
+                        source of vitamins and minerals for our clients.</p>
+                </div>
+                <div class="box">
+                    <h1>2.</h1>
+                    <span>Farmer Products</span>
+                    <p>We work with many farms to provide you with natural <br>
+                        products grown with love and care with no GMO or <br>
+                        pesticides.</p>
+                </div>
+                <div class="box">
+                    <h1>3.</h1>
+                    <span>Fast Delivery</span>
+                    <p>We want our client to receive their fresh products <br>
+                        as soon as possible, so we process and ship the <br>
+                        order at once..</p>
+                </div>
+            </div>
+            <div class="discount">
+                <a href="shop.html">
+                    <img src="/images/discount1.jpg" alt="">
+                </a>
+                <a href="shop.html">
+                    <img src="/images/discount2.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- start prooduct -->
+    <section class="products-sample">
+        <h1 class="title">Our Products</h1>
+        <div class="container">
+            
+            <ul class="filters">
+                <li data-cat=".product" class="active">new arrivals</li>
+                <li data-cat=".organic">organic</li>
+                <li data-cat=".vegetable">vegetables</li>
+            </ul>
+
+            <div class="products">
+                <div class="product organic">
+                    <a href=""><img src="/images/organic foods/Cascadian-Farm-Organic-Cinnamon-Crunch-9-600x600-1.webp" alt=""></a>
+                    <div class="info organic">
+                        <a href="">fruit,organic,vegetable</a>
+                        <p class="product-title organic">Cascadian Farm Organic Cinnamon...</p>
+                        <span class="product-price">$16.00</span>
+                    </div>
+
+                </div>
+                <div class="product vegetable">
+                    <a href=""><img src="/images/vegetabels/Organic-Kiwi-Fruit-500g.webp" alt=""></a>
+                    <div class="info vegetable">
+                        <a href="">fruit,organic,vegetable</a>
+                        <p class="product-title">organic Kiwi Fruit 500g</p>
+                        <span class="product-price">$5.50</span>
+                    </div>
+                </div>
+                <div class="product organic">
+                    <a href=""><img src="/images/organic foods/Crisco-Organic-Refined-Coconut-Oil-27_1-600x600-1.webp" alt=""></a>
+                    <div class="info organic">
+                        <a href="">fruit,organic,vegetable</a>
+                        <p class="product-title">Crisco Organic Refined Coconut...</p>
+                        <span class="product-price">$23</span>
+                    </div>
+                </div>
+                <div class="product vegetable">
+                    <a href=""> <img src="/images/vegetabels/Organic-Fennel.webp" alt=""></a>
+                    <div class="info vegetable">
+                        <a href="">fruit,organic,vegetable</a>
+                        <p class="product-title">Organic Fennel</p>
+                        <span class="product-price">$4.00</span>
+                    </div>
+                </div>
+                <div class="product organic">
+                    <a href=""><img src="/images/organic foods/Orgain-Organic-Protein-Almondmilk-Unsweetened-Vanilla-32-600x600-1.webp" alt=""></a>
+                    <div class="info organic">
+                        <a href="">fruit,organic,vegetable</a>
+                        <p class="product-title">Organic Protein Almondmilk...</p>
+                        <span class="product-price">$10.50</span>
+                    </div>
+                </div>
+                <div class="product vegetable">
+                    <a href=""><img src="/images/vegetabels/Organic-Sebago-Potatoes-1kg.webp" alt=""></a>
+                    <div class="info vegetable">
+                        <a href="">fruit,organic,vegetable</a>
+                        <p class="product-title">Organic Sebago Potatoes 1kg</p>
+                        <span class="product-price">$12</span>
+                    </div>
+                </div>
+                <div class="product organic">
+                    <a href=""><img src="/images/organic foods/Plum-Organics-Blueberry-Blitz-Organic-Apple-Sauce-Fruit-Veggie-Mashups-3.webp" alt=""></a>
+                    <div class="info organic">
+                        <a href="">fruit,organic,vegetable</a>
+                        <p class="product-title">Plum Organics Blueberry Blitz...</p>
+                        <span class="product-price">$15</span>
+                    </div>
+                </div>
+                <div class="product vegetable">
+                    <a href=""><img src="/images/vegetabels/Organic-Fennel.webp" alt=""></a>
+                    <div class="info vegetable">
+                        <a href="">fruit,organic,vegetable</a>
+                        <p class="product-title">Organic-Fennel</p>
+                        <span class="product-price">$7</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- start banner  -->
+    <div class="panner">
+        <div class="container">
+            <div class="info">
+                <h1>Fruits and Vegetables</h1>
+                <p>Fresh and Delicious All Year Round!</p>
+                <button class="btn">shop now!</button>
+            </div>
+        </div>
+    </div>
+    <!-- start our vegetables  -->
+    <section class="our-vegetables">
+        <div class="container">
+            <div class="image">
+                <img src="/images/blabla.webp" alt="">
+            </div>
+            <div class="info">
+                <div>
+                    <h1>A Source of Vitamins</h1>
+                    <p>Vegetables can be eaten either raw or cooked and play an important 
+                        role in human nutrition, being mostly low in fat and carbohydrates, 
+                        but high in vitamins, minerals and dietary fiber.</p>
+                </div>
+                <div>
+                    <h1>Best Quality Products</h1>
+                    <p>“We eliminated any possible pollution in our soils in order to deliver 
+                        the purest organic produce to our customers’ tables.“</p>
+                </div>
+                <div>
+                    <h1>Best Quality Products</h1>
+                    <p>“We eliminated any possible pollution in our soils in order to deliver 
+                        the purest organic produce to our customers’ tables.“</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- start latest blog section  -->
+    <section class="latest-blog">
+        <h1 class="title">Latest from the Blog</h1>
+        <div class="container">
+            <div>
+                <a href="blog.html"><img src="/images/post7-1160x508-1-640x508.jpg" alt=""></a>
+                <p>Health Benefits of a Raw Food</p>
+                <div class="info">
+                    <a href="adminBlog.html">admin</a>
+                    <span>September 23, 2023</span>
+                </div>
+            </div>
+            <div>
+                <a href="blog.html"><img src="/images/post4-1160x508-1-640x508.jpg" alt=""></a>
+                <p>The Anytime Snack Pack for Everyone</p>
+                <div class="info">
+                    <a href="adminBlog.html">admin</a>
+                    <span>September 23, 2023</span>
+                </div>
+            </div>
+            <div>
+                <a href="blog.html"><img src="/images/post2-1160x508-1-640x508.jpg" alt=""></a>
+                <p>6 After-School Snacks the Kiddos Will Love</p>
+                <div class="info">
+                    <a href="adminBlog.html">admin</a>
+                    <span>September 23, 2023</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- start testimonials sectoins-->
+    <!-- <section class="testemonials mySwiper">
+        <h1 class="title">Our Clients Testimonials</h1>
+        <div class="container swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="/images/testi.webp" alt="">
+                <div class="info">
+                    <span class="quote"><i class="fa-solid fa-quote-left"></i></span>
+                    <p>I’d like to admit that the quality of clothes is really good. I ordered different items from different manufacturers, <br>
+                        and they are all high-class!</p>
+                    <span class="clint-name">tim diaz</span>
+                    <span>customers</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="/images/testi1.jpg" alt="">
+                <div class="info">
+                    <span class="quote"><i class="fa-solid fa-quote-left"></i></span>
+                    <p>Thank you, Naturio, for remarkable discount you provided me! I became a regular buyer because my family and <br>
+                        relatives now adore your products. We also shipped it to our overseas friends as such products are hard to find elsewhere!</p>
+                    <span class="clint-name">tim diaz</span>
+                    <span>customers</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="/images/testi.jpg" alt="">
+                <div class="info">
+                    <span class="quote"><i class="fa-solid fa-quote-left"></i></span>
+                    <p>It was my first time to buy healthy food online and I can say I will order it again and again! Now I pay more <br>
+                        attention to my health and have a lot of organic products. Thank you, guys, for your attention to details and customers!</p>
+                    <span class="clint-name">tim diaz</span>
+                    <span>customers</span>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- start new subscribe -->
+    <div class="new-subscibe">
+        <h1 class="title">Subscribe Newsletter</h1>
+        <div class="container">
+            <input type="text" placeholder="enter your email">
+            <button class="btn">subscribe</button>
+        </div>
+    </div>
+    <!-- start footer  -->
+    <footer>
+        <div class="container">
+            <div>
+                <h1>categories</h1>
+                <ul>
+                    <li>new products</li>
+                    <li>our stores</li>
+                    <li>top sellers</li>
+                    <li>your health</li>
+                </ul>
+            </div>
+            <div>
+                <h1>information</h1>
+                <ul>
+                    <li>home</li>
+                    <li>about</li>
+                    <li>blog</li>
+                    <li>shop</li>
+                </ul>
+            </div>
+            <div>
+                <h1>my account</h1>
+                <ul>
+                    <li>checkout</li>
+                    <li>compare</li>
+                    <li>my account</li>
+                    <li>wishlist</li>
+                </ul>
+            </div>
+            <div>
+                <h1>store information</h1>
+                <ul>
+                    <li>Address: 4578 Marmora Road, Glasgow</li>
+                    <li>Phones: +3(800) 2345-6789,</li>
+                    <li>work from 9:00 am to 7:00 pm weekly</li>
+                    <li>E-mail: info@demolink.org</li>
+            </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- js files  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
