@@ -471,6 +471,9 @@ header{
   .our-vegetables .container{
     flex-wrap: wrap;
   }
+  .our-vegetables .container img{
+    width: 400px;
+  }
 }
 /* start latest blog */
 .latest-blog{
