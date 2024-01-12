@@ -265,7 +265,7 @@ header{
 }
 /* start home section  */
 .home{
-  background-image: url(images/bg1-1.jpg);
+  background-image: url(../images/bg1-1.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -343,6 +343,11 @@ header{
     }
   }
 }
+@media (max-width:768px) {
+  .about-us .discount img{
+    width: 400px;
+  }
+}
 /* start product sample section  */
 .products-sample{
   .container{
@@ -413,7 +418,7 @@ header{
 }
 /* start panner  */
 .panner{
-    background-image: url(images/banners2.jpg);
+    background-image: url(../images/banners2.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -524,7 +529,7 @@ header{
 }
 /* start testemonials */
 /* .testemonials{
-  background-image: url(images/bg5.jpg);
+  background-image: url(../images/bg5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -590,7 +595,7 @@ header{
 }
 /* start footer */
 footer{
-  background-image: url(images/footer-widgets-bg.jpg);
+  background-image: url(../images/footer-widgets-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
