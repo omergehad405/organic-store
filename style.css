@@ -344,7 +344,7 @@ header{
   }
 }
 @media (max-width:768px) {
-  .about-us .discount img{
+  .about-us .discount a img{
     width: 400px;
   }
 }
@@ -472,12 +472,12 @@ header{
     }
   }
 }
-@media (max-width:1000px) {
+@media (max-width:768px) {
   .our-vegetables .container{
     flex-wrap: wrap;
   }
-  .our-vegetables .container img{
-    width: 400px;
+  .our-vegetables .container .image img{
+    width: 500px;
   }
 }
 /* start latest blog */
@@ -587,7 +587,6 @@ header{
       padding: 15px 10rem 15px 25px;
       border: 1px solid #777;
       margin-right: 15px;
-      margin-botton:15px;
       &:focus{
         outline: none;
       }
