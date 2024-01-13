@@ -235,6 +235,11 @@ header{
           right: 25px;
           cursor: pointer;
         }
+        li{
+          &::before , &::after{
+            content: "";
+          }
+        }
     }
   }
 }
