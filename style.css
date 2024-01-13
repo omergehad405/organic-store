@@ -153,6 +153,7 @@ header{
       align-items: center;
       gap: 30px;
       li{
+        position: relative;
         a{
           color: #999;
           font-weight: bold;
@@ -164,7 +165,43 @@ header{
             color: #666;
           }
         }
-        
+        &::before , &::after{
+          content: "\f299";
+          position: absolute;
+          font-family: FontAwesome;
+          color: var(--green-color);
+          top: -25px;
+          left: 50%;
+          transform: translate(-50%);
+          font-size: 22px;
+          transition: 0.4s;
+        }
+        &::after {
+          transform: rotate(45deg);
+          top: -100px;
+          left: 30px;
+          opacity: 0;
+        }
+        &::before {
+          left: -20px;
+          opacity: 0;
+        }
+        &:hover::after{
+          top: -25px;
+          left: 50%;
+          opacity: 1;
+        }
+        &:hover::before {
+          left: 50%;
+          opacity: 1;
+        }
+        &.active{
+          &::before , &::after{
+            top: -25px;
+            left: 50%;
+            opacity: 1;
+          }
+        }
         .arrow{
           transform: rotate(-180deg);
         }
@@ -338,14 +375,9 @@ header{
       gap: 15px;
 
       img{
-        width: 550px;
+        width: 450px;
       }
     }
-  }
-}
-@media (max-width:768px) {
-  .about-us .discount a img{
-    width: 400px;
   }
 }
 /* start product sample section  */
@@ -475,9 +507,10 @@ header{
 @media (max-width:768px) {
   .our-vegetables .container{
     flex-wrap: wrap;
+    justify-content: center;
   }
   .our-vegetables .container .image img{
-    width: 20px;
+    width: 450px;
   }
 }
 /* start latest blog */
@@ -587,6 +620,7 @@ header{
       padding: 15px 10rem 15px 25px;
       border: 1px solid #777;
       margin-right: 15px;
+      margin-bottom: 15px;
       &:focus{
         outline: none;
       }
