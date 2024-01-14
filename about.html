@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturio food store</title>
+    <link rel="stylesheet" href="/css files/about.css">
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- font awsome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+        <!-- start header  -->
+        <header>
+            <div class="container">
+            
+            <h3>Last sale up to <span>20% OFF.</span> Use code <span>“SALE70”</span>.</h3>
+            <div class="options">
+                <ul>
+                    <li><a href="compare.htlm">compare</a></li>
+                    <li><a href="wishlist.htlm">wishlist</a></li>
+                    <li><a href="login.htlm">login</a></li>
+                    <li onmouseenter="openCart()">
+                        <a href="cart.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            cart
+                            <span class="cart_number">0</span>
+                        </a>
+    
+                        <div class="cart-info">
+                            <h2>my cart</h2>
+                            <a class="closeBtn">
+                                <i class="fa-solid fa-xmark" onclick="closeCart()"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </header>
+        <!-- start subheader  -->
+        <div class="sub-header">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.webp" alt="">
+                </a>
+    
+                <ul class="main-nav">
+                    <li><a href="index.html">home</a></li>
+                    <li class="active"><a href="about.html">about</a></li>
+                    <li><a href="team.html">team</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                    <li>
+                        <a href="shop.html">shop</a>
+                        <span><i class="fa-solid fa-caret-up arrow"></i></span>
+                    </li>
+                    <li><a href="contacts.html">contacts</a></li>
+    
+                    <ul class="menu" >
+                        <a class="closeBtn" >
+                            <i class="fa-solid fa-xmark" ></i>
+                        </a>
+        
+                        <li><a href="baking.html">baking</a></li>
+                        <li><a href="fruit.html">fruit</a></li>
+                        <li><a href="organic.html">organic</a></li>
+                        <li><a href="packagedMeals.html">packaged meals</a></li>
+                        <li><a href="vegetable.html">vegetable</a></li>
+                    </ul>
+                    
+                    <i class="fa-solid fa-xmark close"></i>
+                </ul>
+    
+                <i class="fa-solid fa-bars bars"></i>
+                
+            </div>
+        </div>
+        <!-- start file info  -->
+        <div class="file-info">
+            <div class="container">
+                <span class="file-name">About</span>
+                <div class="file-desenation">
+                    <a href="index.html">Home</a>
+                    /
+                    <span>About</span>
+                </div>
+            </div>
+        </div>
+        <!-- start about section  -->
+        <div class="about">
+            <h1 class="title">About Us</h1>
+            <div class="container">
+                <h2>5 Reasons to Love Butternut Squash</h2>
+                <p>Look beyond butternut squash’s intimidating hard skin, and you’ll find a bright orange flesh, buttery texture <br>
+                    and slightly sweet, nutty flavor — with so many meal possibilities! Why should you make butternut squash <br>
+                    your go-to ingredient for fall and winter meals?</p>
+            </div>
+        </div>
+        <!-- start number  -->
+        <section class="numbers">
+            <div class="container">
+                <div>
+                    <h1 class="number brands" data-val="225">0</h1>
+                    <span>brands</span>
+                </div>
+                <div>
+                    <h1 class="number stores" data-val="14">0</h1>
+                    <span>stores</span>
+                </div>
+                <div>
+                    <h1 class="number clients" data-val="402">0</h1>
+                    <span>happy clients</span>
+                </div>
+            </div>
+            <div class="image"></div>
+            <div class="info container">
+                <div>
+                    <h1>Free Shipping</h1>
+                    <p>we work with proven designers and manufacturers, <br>
+                        that’s why we can guarantee 100% quality of all items.</p>
+                </div>
+                <div>
+                    <h1>24/7 Support</h1>
+                    <p>we ship all over USA as well as overseas. It takes 3-5 <br>
+                        business days for package to be delivered within US.</p>
+                </div>
+                <div>
+                    <h1>Payment Process</h1>
+                    <p>we offer affordable prices and regularly announce sales <br>
+                        on last season’s items.</p>
+                </div>
+            </div>
+        </section>
+        <!-- start services  -->
+        <section class="services">
+            <h1 class="title">what we can do</h1>
+            <p>Check out the recent additions to our autumn collection and be fashionable!</p>
+            <div class="container">
+
+                <div class="service">
+                    <h1>Best Quality Products</h1>
+                    <div class="progress">
+                        <span data-progress="90%" class="progress-bar"></span>
+                    </div>
+                </div>
+                <div class="service">
+                    <h1>Farmer Products</h1>
+                    <div class="progress">
+                        <span data-progress="80%" class="progress-bar"></span>
+                    </div>
+                </div>
+                <div class="service">
+                    <h1>Fast Delivery</h1>
+                    <div class="progress">
+                        <span data-progress="70%" class="progress-bar"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- start founder  -->
+        <div class="panner">
+            <div class="container">
+                <div class="info">
+                    <h1>the founder</h1>
+                    <p>Look beyond butternut squash’s intimidating hard skin, and you’ll find a bright orange 
+                        flesh, buttery texture and slightly sweet, nutty flavor — with so many meal possibilities! 
+                        Why should you make butternut squash your go-to ingredient for fall and winter meals?</p>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- start footer  -->
+        <footer>
+        <div class="container">
+            <div>
+                <h1>categories</h1>
+                <ul>
+                    <li>new products</li>
+                    <li>our stores</li>
+                    <li>top sellers</li>
+                    <li>your health</li>
+                </ul>
+            </div>
+            <div>
+                <h1>information</h1>
+                <ul>
+                    <li>home</li>
+                    <li>about</li>
+                    <li>blog</li>
+                    <li>shop</li>
+                </ul>
+            </div>
+            <div>
+                <h1>my account</h1>
+                <ul>
+                    <li>checkout</li>
+                    <li>compare</li>
+                    <li>my account</li>
+                    <li>wishlist</li>
+                </ul>
+            </div>
+            <div>
+                <h1>store information</h1>
+                <ul>
+                    <li>Address: 4578 Marmora Road, Glasgow</li>
+                    <li>Phones: +3(800) 2345-6789,</li>
+                    <li>work from 9:00 am to 7:00 pm weekly</li>
+                    <li>E-mail: info@demolink.org</li>
+            </ul>
+            </div>
+        </div>
+        </footer>
+
+        <script src="main.js"></script>
+</body>
+</html>
